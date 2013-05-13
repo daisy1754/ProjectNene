@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "AutoPlayLovePlusCollection",
+  "version": "0.0.1",
+  "description": "",
+  "content_scripts": [
+    {"matches" : ["http://gree-th-www.app-amb.jp/index*"],
+      "js": ["lib/jquery-1.9.1.min.js", "content_script.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ]
+}
