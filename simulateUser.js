@@ -11,3 +11,7 @@ var simulateClick = function(element) {
   dispatchMouseEvent(element, 'click', true, true);
 }
 
+var clickLinkWithText = function(text) {
+  simulateClick($("a").filter(
+      function() {return $(this).text() === text;})[0]);
+}
