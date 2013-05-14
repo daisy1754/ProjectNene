@@ -15,4 +15,19 @@ var getCurrentButtlePoint = function() {
   return getCurrentInfo('buttle');
 }
 
+var gotoPage = function(kind) {
+  var battleElm = $("a").filter(
+      function() {
+       return this.href.indexOf("http://gree-th-www.app-amb.jp/" + kind + "/?P") == 0;
+      })[0];
+  simulateClick(battleElm);
+}
+
+var gotoBattlePage = function() {
+  gotoPage('battle');
+}
+
+var gotoQuestPage = function() {
+  gotoPage('quest');
+}
 
