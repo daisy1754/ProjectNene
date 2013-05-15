@@ -19,6 +19,16 @@
       "all_frames": true,
       "run_at": "document_idle"
     },
+    {"matches" : ["http://gree-th-www.app-amb.jp/battle/search*"],
+      "js": ["lib/jquery-1.9.1.min.js", "simulateUser.js", "counter.js", "battle_search.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    },
+    {"matches" : ["http://gree-th-www.app-amb.jp/battle/type_select*"],
+      "js": ["lib/jquery-1.9.1.min.js", "simulateUser.js", "counter.js", "battle_type_select.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    },
     {"matches" : ["http://gree-th-www.app-amb.jp/battle/check?*"],
       "js": ["lib/jquery-1.9.1.min.js", "simulateUser.js", "battle_check.js"],
       "all_frames": true,

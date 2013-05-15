@@ -23,7 +23,7 @@ var gotoBattleCheckPageOrNextStudents = function() {
   }
   incrementCount(QUERY_NUM_KEY);
   if (getCount() > QUERY_THREATHOLD) {
-    // TODO: currently I just give up, later I should fight with those who are same level as me.
+    clickLinkWithText("近いﾚﾍﾞﾙの生徒");
   } else {
     setTimeout(
       function() {clickLinkWithText("ﾘｽﾄを更新");},
