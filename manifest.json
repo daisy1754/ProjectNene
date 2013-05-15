@@ -3,6 +3,10 @@
   "name": "AutoPlayLovePlusCollection",
   "version": "0.0.1",
   "description": "",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
   "content_scripts": [
     {"matches" : ["http://gree-th-www.app-amb.jp/index*"],
       "js": ["lib/jquery-1.9.1.min.js", "simulateUser.js", "top.js"],
@@ -29,10 +33,13 @@
       "all_frames": true,
       "run_at": "document_idle"
     },
-    {"matches" : ["http://gree-th-www.app-amb.jp/battle/check?*"],
+    {"matches" : ["http://gree-th-www.app-amb.jp/battle/check*"],
       "js": ["lib/jquery-1.9.1.min.js", "simulateUser.js", "battle_check.js"],
       "all_frames": true,
       "run_at": "document_idle"
     }
+  ],
+  "permissions": [
+    "tabs"
   ]
 }
