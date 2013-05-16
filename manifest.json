@@ -23,7 +23,7 @@
       "all_frames": true,
       "run_at": "document_idle"
     },
-    {"matches" : ["http://gree-th-www.app-amb.jp/battle/?*"],
+    {"matches" : ["http://gree-th-www.app-amb.jp/battle/?*", "http://gree-th-www.app-amb.jp/battle/index*"],
       "js": ["lib/jquery-1.9.1.min.js", "simulateUser.js", "counter.js", "battle_top.js"],
       "all_frames": true,
       "run_at": "document_idle"
