@@ -15,7 +15,7 @@ var findStudentsWhoseLevelIsLessThan = function(threathold) {
 }
 
 var gotoBattleCheckPageOrNextStudents = function() {
-  var weakStudents = findStudentsWhoseLevelIsLessThan(10);
+  var weakStudents = findStudentsWhoseLevelIsLessThan(LEVEL_THREATHOLD);
   if (weakStudents.length !== 0) {
     resetCount(QUERY_NUM_KEY);
     simulateClick($(weakStudents[0]).find("a")[0]);
