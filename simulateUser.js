@@ -22,9 +22,8 @@ var clickLinkWithText = function(text) {
 }
 
 var reloadTopPage = function() {
-  if (localStorage['lastReload'] 
-      && (new Date() - Date.parse(localStorage['lastReload'])) > 1000) {
-    //location.href = "http://gree-th-www.app-amb.jp/index.php";
+  if (!localStorage['lastReload']
+      || (new Date() - Date.parse(localStorage['lastReload'])) > 1000) {
     chrome.extension.sendMessage({command: 'reload'}, function(response) {
        console.log("reload request sent");
     });
