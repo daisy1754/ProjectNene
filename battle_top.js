@@ -22,7 +22,7 @@ var gotoBattleCheckPageOrNextStudents = function() {
     return;
   }
   incrementCount(QUERY_NUM_KEY);
-  if (getCount() > QUERY_THREATHOLD) {
+  if (getCount(QUERY_NUM_KEY) > QUERY_THREATHOLD) {
     clickLinkWithText("近いﾚﾍﾞﾙの生徒");
   } else {
     setTimeout(
